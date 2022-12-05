@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup JDK
         uses: actions/setup-java@v2
         with:
           java-version: '19'
